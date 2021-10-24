@@ -13,7 +13,8 @@ describe('Infinity Automation Technical Test', function() {
 
         // Given
         cy.get("#postcode").clear()
-        cy.get("#postcode").type("ST87HH")
+        cy.get('#postcode').click()
+        cy.get("#postcode").type("ST87HH", {force: true})
         cy.get('#distance').select('Within 50 miles', { force: true }).should('have.value', '50')
         cy.get('#make').select('Lamborghini', { force: true }).should('have.value', 'Lamborghini')
         cy.get('#model').select('Aventador', { force: true }).should('have.value', 'Aventador')
@@ -42,7 +43,8 @@ describe('Infinity Automation Technical Test', function() {
 
         // Given
         cy.get("#postcode").clear()
-        cy.get("#postcode").type("ST87HH")
+        cy.get('#postcode').click()
+        cy.get("#postcode").type("ST87HH", {force: true})
         cy.get('#distance').select('Within 50 miles', { force: true }).should('have.value', '50')
         cy.get('#make').select('Aston Martin', { force: true }).should('have.value', 'Aston Martin')
         cy.get('#model').select('DB11', { force: true }).should('have.value', 'DB11')
