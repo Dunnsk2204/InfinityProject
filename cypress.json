@@ -1,0 +1,9 @@
+{
+    "baseUrl" : "https://www.autotrader.co.uk/",
+
+    "defaultCommandTimeout":7000,
+
+    "chromeWebSecurity": false 
+
+}
+
