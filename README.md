@@ -42,7 +42,7 @@ There could obviously be much more test coverage of the app, but for the purpose
 
 Would be nice to register and login with various users to ensure that everything runs successfully. In real life scenarios you may read data from an API to then login with that user retrived from some sort of API call. The possibilities with automating this website are endless.
 
-We could also incorporate more intelligent data driven testing via an API call or some other type of file that contains high amounts of data to test with such as a json file. We could use this data to mock through various scenarios such as logging in/ registering a user etc.
+We could also incorporate more intelligent data driven testing via an API call or some other type of file that contains high amounts of data to use in our test cases. This allows us to provide a large data set across the app rather than using hard coded values that we know work.
 
 We could also really dial down into the filters to reduce searches and ensure the results are pinpoint accurate.
 
