@@ -1,6 +1,8 @@
 # Infinity Tech Test
 
-Small script that runs a few basic tests against Auto Trader's website.
+Small script that runs a few basic tests against Auto Trader's website. The script is located in
+
+* sfhidifdibfdibf
 
 ## Requirements
 
