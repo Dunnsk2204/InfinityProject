@@ -27,8 +27,10 @@ describe('Infinity Automation Technical Test', function() {
         // Then
         cy.get('h2[data-testid=advert-price]').then(function($text) {
             carPrice = $text.text()
-            expect(carPrice).to.eq('£159,900')
+            const priceReduced = parseInt(carPrice.replace('£', '').replace(',',''))
+            cy.wrap(priceReduced).should('be.lte', 250000); // less than or eq
         })
+        
 
         cy.get('h1[data-testid=advert-title]').should('include.text', 'Lamborghini Aventador')
 
@@ -56,6 +58,7 @@ describe('Infinity Automation Technical Test', function() {
         cy.get('#maxPrice').select('250000', { force: true }).should('have.value', '250000')
         cy.get('#minYear').select('2017', { force: true }).should('have.value', '2017')
 
+        // When
         cy.get('.atds-button--primary').should('be.visible').click({force: true})
         cy.get(".search-page__products").children().first().click();
 
@@ -63,8 +66,6 @@ describe('Infinity Automation Technical Test', function() {
         // Then
         cy.get('h2[data-testid=advert-price]').then(function($text) {
             carPrice = $text.text()
-            expect(carPrice).to.eq('£75,990')
-
             const priceReduced = parseInt(carPrice.replace('£', '').replace(',',''))
 
             cy.wrap(priceReduced).should('be.gte', 75000); // greater than or eq
