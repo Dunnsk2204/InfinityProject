@@ -50,3 +50,8 @@ We could also really dial down into the filters to reduce searches and ensure th
 
 No real challenges to be completely honest. The only thing that did take me longer than expected was finding the iFrame which was a popup when the first page loads. Took me a while to figure out what was going on! 
 
+
+## Cypress Test Runner showing two tests that have passed successfully.
+
+<img width="1329" alt="Screenshot 2021-10-25 at 16 29 46" src="https://user-images.githubusercontent.com/58164238/138725499-83238d75-b419-4d39-a6d8-637887b67c4f.png">
+
